@@ -1,0 +1,26 @@
+<ion-view view-title="登录">
+    <ion-nav-buttons side="left">   <!--side:向左向右-->
+        <button class="button" type="button" ng-click="reg()">返回</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <form>
+            <ul class="list list-inset">
+                <li class="item item-input">
+                    <label class="item-input">
+                        <i class="icon ion-person"></i>
+                        <input type="text" placeholder="请输入用户名" class="col col-75">
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <i class="icon ion-locked"></i>
+                        <input type="password"  placeholder="请输入密码" class="col col-75">
+                    </label>
+                </li>
+                <button class="button button-positive button-block">
+                    登录
+                </button>
+            </ul>
+        </form>
+    </ion-content>
+</ion-view>

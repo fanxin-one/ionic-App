@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>登录</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <button class="button" ng-click="doSomething()">返回</button>
+        </div>
+        <h1 class="title">登录</h1>
+        <div class="buttons">
+            <button class="button">前往</button>
+        </div>
+        <i class="icon ion-gear-b"></i>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="list list-inset">
+            <li class="item item-input">
+                <label class="item-input">
+                    <i class="icon ion-person"></i>
+                    <input type="text" placeholder="请输入用户名" class="col col-75">
+                </label>
+            </li>
+            <li class="item item-input">
+                <label class="item-input">
+                    <i class="icon ion-locked"></i>
+                    <input type="password"  placeholder="请输入密码" class="col col-75">
+                </label>
+            </li>
+           <button class="button button-positive button-block">
+               登录
+            </button>
+            <!--亮度进度条-->
+             <div class="item range range-positive">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="12">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+            <!--声音进度条-->
+            <div class="range">
+                <i class="icon ion-volume-low"></i>
+                <input type="range" name="volume">
+                <i class="icon ion-volume-high"></i>
+            </div>
+            <div class="item range range-calm">
+                <i class="icon ion-ios-lightbulb-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="25">
+                <i class="icon ion-ios-lightbulb"></i>
+            </div>
+        </ul>
+        
+    </ion-content>
+    <!--<ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <button class="button" ng-click="doSomething()">返回</button>
+        </div>
+        <h1 class="title">注册</h1>
+        <div class="buttons">
+            <button class="button">前往</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form >
+            <ul class="list list-inset">
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</span>
+                        <input type="text" placeholder="请输入用户名" class="col col-75">
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</span>
+                        <input type="number"  placeholder="请输入手机号码" class="col col-75">
+                        <button class="button button-energized button-small" type="button" style="width:95px;">获取验证码</button>
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
+                        <input type="number"  placeholder="请输入验证码" class="col col-75">
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
+                        <input type="email"  placeholder="请输入邮箱" class="col col-75">
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+                        <input type="password"  placeholder="请输入密码" class="col col-75">
+                    </label>
+                </li>
+                <li class="item item-input">
+                    <label class="item-input">
+                        <span class="input-label col col-25">确认密码：</span>
+                        <input type="password"  placeholder="请确认密码" class="col col-75">
+                    </label>
+                </li>
+            <button class="button button-positive button-block">
+                    提交
+                </button>
+            </ul>
+
+        </form>
+    </ion-content>-->
+    
+     
+  </body>
+</html>

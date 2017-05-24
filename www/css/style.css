@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+/*.list{
+    padding-top: 45px;
+}*/
+.item{
+    padding-top:8px;
+}
+.item .checkbox .input{
+    width: 25px;
+    height: 25px;
+}
